@@ -65,3 +65,7 @@ Sıralama işlemi için aşağıdaki adımları izleyin:
 1. Programı çalıştırın ve sıralamak istediğiniz sayıları argüman olarak girin:
    ```bash
    ./push_swap [sayı1] [sayı2] [sayı3] ...
+
+---
+
+Bu README dosyası Derya ACAR tarafından hazırlanmıştır.
