@@ -1,70 +1,73 @@
-<!-- Proje Başlığı -->
-<h1 align="center"> 42 - Push_swap 🧮</h1>
+<!-- Project Title -->
+<h1 align="center">42 - Push_swap 🧮</h1>
 
-<!-- Proje Açıklaması -->
+<!-- Project Description -->
 <p align="center">
-Bu proje, bir dizi sayıyı en az adımda sıralamak için en verimli algoritmayı geliştirmeyi amaçlar. Yığın (stack) veri yapıları kullanarak sıralama işlemi optimize edilir ve veriler iki yığın arasında taşınır. Çeşitli sıralama algoritmaları (Bubble Sort, Quick Sort, vb.) değerlendirilir ve en uygun algoritma seçilir. Proje, algoritma tasarımı ve veri yapılarının etkin kullanımında bilgi sağlar ve performans avantajları sunar. 🔍📊</p>
-
-<!-- Proje Logosu veya Görseli -->
-<p align="center">
-  <a target="blank"><img src="https://i.hizliresim.com/kjz5yie.png" height="150" width="150" /></a>
+This project aims to develop the most efficient algorithm to sort a sequence of numbers in the fewest possible steps. Using stack data structures, the sorting operation is optimized by transferring data between two stacks. Various sorting algorithms (Bubble Sort, Quick Sort, etc.) are evaluated, and the most suitable one is selected. The project provides insight into algorithm design and effective use of data structures while offering performance advantages. 🔍📊
 </p>
 
-## Projenin Amacı 🎯
+<!-- Project Logo or Image -->
+<p align="center">
+  <a target="blank"><img src="https://github.com/deryaxacar/42-Push_swap/blob/main/push_swap.png" height="150" width="150" /></a>
+</p>
 
-Push_swap projesinin temel amacı, belirli bir sayı dizisini en az adımda sıralamak için en etkili algoritmayı geliştirmektir. Bu hedefe ulaşmak için projede yığın (stack) veri yapıları ve çeşitli sıralama algoritmaları kullanılır. 
+## 🎯 Project Objective
 
-Yığın veri yapıları, sıralama sürecinde verilerin düzenlenmesi ve yönetilmesinde kritik bir rol oynar. Bu veri yapıları, "son giren, ilk çıkan" (LIFO) prensibine göre çalışır ve sıralama algoritmalarının etkinliğini artırmak için kullanılır. İki ayrı yığın kullanarak, veriler bir yığından diğerine taşınır, böylece sıralama işlemi daha verimli ve düzenli hale gelir.
+The main goal of the Push_swap project is to develop the most effective algorithm to sort a given sequence of numbers with the minimum number of operations. This is achieved by using stack data structures and various sorting algorithms.
 
-Projede, sıralama algoritmalarının performansı detaylı bir şekilde analiz edilir. Basit algoritmalardan (Bubble Sort, Insertion Sort) daha karmaşık algoritmalara (Quick Sort, Merge Sort) kadar çeşitli yöntemler uygulanır ve her birinin avantajları ile dezavantajları değerlendirilir. Bu analiz, hangi algoritmanın en verimli olduğunu belirlemek için yapılır ve sonuçta en iyi performansı sağlayan algoritma seçilir.
+Stack structures play a crucial role in organizing and managing data during the sorting process. These structures operate on a "last in, first out" (LIFO) principle and are used to enhance the efficiency of sorting algorithms. By utilizing two separate stacks, data is transferred between them, making the sorting process more efficient and structured.
 
-Push_swap, algoritma tasarımı, veri yapıları ve performans optimizasyonu konularında derinlemesine bilgi edinmeyi sağlar. Yığın veri yapılarının etkin kullanımı ve sıralama algoritmalarının performansını artırmak, yazılım geliştirme süreçlerinde önemli beceriler kazandırır. Proje, sıralama işlemlerinde verimlilik ve performans açısından gerçek dünya uygulamalarında önemli avantajlar sunar.
+The project involves a detailed analysis of sorting algorithm performance. It includes simple algorithms (Bubble Sort, Insertion Sort) as well as more complex ones (Quick Sort, Merge Sort). Each method is evaluated for its advantages and disadvantages, helping determine which algorithm yields the best performance.
 
-### Temel Hedefler 📈
-- **Verimli Sıralama:** Verilen sayı dizisini en az adımda sıralayabilen bir algoritma geliştirmek. 
-- **Yığın Kullanımı:** İki ayrı yığın kullanarak sıralama algoritmalarını uygulamak. 
-- **Algoritma Optimizasyonu:** Sıralama işlemi için en uygun algoritmayı bulmak ve uygulamak. 
+Push_swap offers deep insights into algorithm design, data structures, and performance optimization. Effective use of stacks and understanding algorithmic efficiency contribute significantly to software development skills and provide real-world benefits in terms of performance and scalability.
 
-## Kullanılan Komutlar 💡
+### 📈 Key Goals
+- **Efficient Sorting:** Develop an algorithm that can sort a given sequence of numbers in the fewest steps.
+- **Use of Stacks:** Implement sorting using two separate stacks.
+- **Algorithm Optimization:** Identify and apply the most optimal sorting algorithm.
 
-Push_swap projesinde kullanılan bazı temel komutlar şunlardır:
+## 💡 Commands Used
 
-- **`sa`**: İlk iki öğeyi `a` yığında takas eder. 🔄
-- **`sb`**: İlk iki öğeyi `b` yığında takas eder. 🔄
-- **`pa`**: `b` yığından `a` yığına bir öğe taşır. ↔️
-- **`pb`**: `a` yığından `b` yığına bir öğe taşır. ↔️
-- **`ra`**: `a` yığındaki tüm öğeleri bir pozisyon döndürür. 🔁
-- **`rb`**: `b` yığındaki tüm öğeleri bir pozisyon döndürür. 🔁
-- **`rra`**: `a` yığındaki tüm öğeleri bir pozisyon geri döndürür. 🔙
-- **`rrb`**: `b` yığındaki tüm öğeleri bir pozisyon geri döndürür. 🔙
-- **`rr`**: Hem `a` hem de `b` yığınlarını bir pozisyon döndürür. 🔁🔁
-- **`rrr`**: Hem `a` hem de `b` yığınlarını bir pozisyon geri döndürür. 🔙🔙
+Here are some of the main commands used in the Push_swap project:
 
-Bu komutlar, sıralama algoritması içinde yığınları yönetmek ve verileri taşımak için kullanılır.
+- **`sa`**: Swap the first two elements of stack `a`. 🔄  
+- **`sb`**: Swap the first two elements of stack `b`. 🔄  
+- **`pa`**: Push the top element from stack `b` to stack `a`. ↔️  
+- **`pb`**: Push the top element from stack `a` to stack `b`. ↔️  
+- **`ra`**: Rotate all elements of stack `a` upwards by one position. 🔁  
+- **`rb`**: Rotate all elements of stack `b` upwards by one position. 🔁  
+- **`rra`**: Reverse rotate all elements of stack `a` by one position. 🔙  
+- **`rrb`**: Reverse rotate all elements of stack `b` by one position. 🔙  
+- **`rr`**: Rotate both stacks `a` and `b` upwards by one position. 🔁🔁  
+- **`rrr`**: Reverse rotate both stacks `a` and `b` by one position. 🔙🔙  
 
+These commands are used within the sorting algorithm to manage the stacks and move data efficiently.
 
-## Gereksinimler 📋
+## 📋 Requirements
 
-Push_swap projesini çalıştırmak için aşağıdaki gereksinimlerin sağlanması gerekir:
+To run the Push_swap project, ensure the following:
 
-- Unix tabanlı bir işletim sistemi (Linux, macOS) 🖥️
-- GCC derleyici 🛠️
+- Unix-based operating system (Linux, macOS) 🖥️  
+- GCC compiler 🛠️  
 
-## Kurulum 🔧
+## 🔧 Installation
 
-Projeyi yerel bir makinede çalıştırmak için aşağıdaki adımları izleyin:
+Follow these steps to run the project locally:
 
-1. Repoyu yerel makinenize klonlayın: `git clone https://github.com/username/push_swap.git`
-2. Proje dizinine gidin: `cd push_swap`
-3. Projeyi derlemek için Makefile'ı çalıştırın: `make`
+1. Clone the repository:  
+   `git clone https://github.com/username/push_swap.git`
+2. Navigate to the project directory:  
+   `cd push_swap`
+3. Compile the project using the Makefile:  
+   `make`
 
-## Kullanım 🗸
+## 🗸 Usage
 
-Sıralama işlemi için aşağıdaki adımları izleyin:
+To perform a sorting operation, follow these steps:
 
-1. Programı çalıştırın ve sıralamak istediğiniz sayıları argüman olarak girin:
+1. Run the program and pass the numbers you want to sort as arguments:
    ```bash
-   ./push_swap [sayı1] [sayı2] [sayı3] ...
+   ./push_swap [number1] [number2] [number3] ...
 
 ---
 
